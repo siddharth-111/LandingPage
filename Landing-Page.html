@@ -4,9 +4,9 @@
 <head>
     <title>LeadSquared</title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
+    <link href='https://fonts.googleapis.com/css?family=Hind+Siliguri' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand brand" href="#">
                     <img src="images/leadSquaredlogo.png" alt="">
                 </a>
             </div>
@@ -34,99 +34,107 @@
     </nav>
     <div class="container">
         <div class="row row-centered">
-            Create your free leadsquared account
+            <p class="text-center">Create your free leadsquared account</p>
         </div>
-        <div class="row row-centered">
-            <p> Used and loved by thousands of users</p>
+        <div class="row ">
+            <p class="text-center" style="font-size: 16px;color: #999999;">Used and loved by thousands of users</p>
         </div>
-    </div>  
-    <div id="wrapper" class="clearfix">
-    <div id="leftcolumn">
-        <div class="row pull-right">
-            <div class="login">
-                <h2 class="login-header">
+        <div class="row clearfix" style="margin-top:10px;">
+            <div class="col-md-6 clearfix">
+              <form action="" method="post" id="register-form" novalidate="novalidate">
+                <div class="login">
+                    <h2 class="login-header">
                 Just 30 secs to get started</h2>
-                <div class="login-container">
-                    <div class="form-group left-inner-addon">
-                        <div class="inner-addon left-addon">
-                            <i class="glyphicon glyphicon-user glyph-color"></i>
-                            <input type="text" class="form-control" placeholder="Enter your Name" />
+                    <div class="login-container">
+                        <div class="form-group left-inner-addon">
+                            <div class="inner-addon left-addon">
+                                <i class="glyphicon glyphicon-user glyph-color"></i>
+                                <input type="text" class="form-control" placeholder="Enter your Name" id="Name" name="Name"  />
+                              		
+                            </div>                             
                         </div>
-                    </div>
-                    <div class="form-group left-inner-addon">
-                        <div class="inner-addon left-addon">
-                            <i class="glyphicon glyphicon-calendar glyph-color"></i>
-                            <input type="text" class="form-control" placeholder="Date of Birth" />
+                        <div class="form-group left-inner-addon">
+                            <div class="inner-addon left-addon">
+                                <i class="glyphicon glyphicon-calendar glyph-color"></i>                                                        <input placeholder="Date of Birth" class="form-control" type="text" onfocus="(this.type='date')" id="DOB" name ="DOB" onblur="(this.type='text')">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group left-inner-addon">
-                        <div class="inner-addon left-addon">
-                            <i class="glyphicon glyphicon-lock glyph-color"></i>
-                            <input type="password" class="form-control" placeholder="Enter Your Password" />
+                        <div class="form-group left-inner-addon">
+                            <div class="inner-addon left-addon">
+                                <i class="glyphicon glyphicon-lock glyph-color"></i>
+                                <input type="password" class="form-control" placeholder="Enter Password" id="Password" name="Password"/>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group left-inner-addon">
-                        <div class="inner-addon left-addon">
-                            <i class="glyphicon glyphicon-lock glyph-color"></i>
-                            <input type="password" class="form-control" placeholder="Re-enter Password" />
+                        <div class="form-group left-inner-addon">
+                            <div class="inner-addon left-addon">
+                                <i class="glyphicon glyphicon-lock glyph-color"></i>
+                                <input type="password" class="form-control" placeholder="Re-enter Password" id="ConfirmPassword" name="ConfirmPassword"/>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group left-inner-addon">
-                        <div class="inner-addon left-addon">
-                            <i class="glyphicon glyphicon-envelope glyph-color"></i>
-                            <input type="email" class="form-control" placeholder="Enter Your email address" />
+                        <div class="form-group left-inner-addon">
+                            <div class="inner-addon left-addon">
+                                <i class="glyphicon glyphicon-envelope glyph-color"></i>
+                                <input type="email" class="form-control" placeholder="Enter Your email address" id="Email" name="Email" />
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group left-inner-addon">
-                        <div class="inner-addon left-addon">
-                            <i class="glyphicon glyphicon-phone glyph-color"></i>
-                            <input type="text" class="form-control" placeholder="Enter your mobile number" />
+                        <div class="form-group left-inner-addon">
+                            <div class="inner-addon left-addon">
+                                <i class="glyphicon glyphicon-phone glyph-color"></i>
+                                <input type="text" class="form-control" placeholder="Enter your mobile number" id="Contact" name="Contact" />
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <input type="button" value="Create my leadsquared account">
+                        <div class="form-group">
+                            <input type="submit" id="formLogin" value="Create my leadsquared account">
+                        </div>
                     </div>
                 </div>
+                </form>
+            </div>
+            <div class="col-md-6" id="rightcolumn">
+                <ul>
+                    <li><span class="glyphicon"><i class="fa fa-book"></i></span>Organize your lead capture</li>
+                    <li><span class="glyphicon glyphicon-leaf"></span>Engage and nurture your leads</li>
+                    <li><span class="glyphicon glyphicon-sunglasses"></span>Sales intelligence to drive your revenue</li>
+                    <li><span class="glyphicon"><i class="fa fa-pie-chart"></i></span>Analyze your marketing sales performance</li>
+                </ul>
             </div>
         </div>
-   
-    </div>
-    <div id="rightcolumn">  
-    <ul>
-    	<li><span class="glyphicon"><i class="fa fa-book"></i></span>Organize your lead capture</li>
-    	<li><span class = "glyphicon glyphicon-leaf"></span>Engage and nurture your leads</li>
-    	<li><span class = "glyphicon glyphicon-sunglasses"></span>Sales intelligence to drive your revenue</li>
-    	<li><span class="glyphicon"><i class="fa fa-pie-chart"></i></span>Analyze your marketing sales performance</li>
-    </ul>     
-    </div> 
-    <div id ="picturediv" class="clearfix">
-   	<div style="width: 50%;float: right;">    <img src='images/Deepak_lamba.jpg'/>
-  	<span  class="right"> <i> "LeadSquared was instrumental in helping us address all our major customer acquisition challenges by organizing lead capture,lead nurturing and marketing automation.We are happy to be active users of LeadSquared" </i>
+        </div>
+
+      	      <div id="picturediv" class="clearfix">
+            <div class="testimonial"> <img src='images/Deepak_lamba.jpg' />
+                <span class="right"> <i> "LeadSquared was instrumental in helping us address all our major customer acquisition challenges by organizing lead capture,lead nurturing and marketing automation.We are happy to be active users of LeadSquared" </i>
 	</span>
-   	<span class="right"><b> Deepak Lamba,President </b><br>
+                <span class="right"><b> Deepak Lamba,President </b><br>
    	<b>TimesPro</b>, <span style=" color: #999999;">A Times of India Group Initiative</span>
-	</span>  
-	</div>
-    </div>
-</div>
-
-<div class="container" style="margin-top: 7%;">
-        <div class="row row-centered"  >
-        <span style="border-bottom: 1px solid #D1CEC8">Some of our happy customers</span>
-            
+                </span>
+            </div>
         </div>
-        <div class="row gallery-container clearfix"  style="margin-left: 6%;"	>
-        <img src="images/FBL.jpg">
-        <img src="images/Timespro.jpg" >
-        <img src="images/centium.jpg" >
-        <img src="images/ace.jpg"  >
-        <img src="images/NIIT.jpg">
-        </div>
- </div> 
 
+       
+        <div class="container">
+         <div class="row row-centered">
+            <p class="text-center"> <span class="customer">Some of our happy customers</span></p>
+        </div>
+        		 <div class="row gallery-container clearfix">
+            <img src="images/Timespro.gif">
+            <img src="images/FBL.gif">
+            <img src="images/centium.gif">
+            <img src="images/ace.gif">
+            <img src="images/NIIT.gif">
+        </div>
+
+
+        </div>
+       
+       
+ 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.0/foundation.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.9.0/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/landingPage.js"></script>
+  
+  <!-- jQuery Form Validation code -->
+ </body>
 
 </html>
