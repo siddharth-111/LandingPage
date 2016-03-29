@@ -19,6 +19,9 @@
                 required: true,
                 equalTo: "#Password"
             },
+			 DOB: {
+                required: true
+            },
             Contact: {
                 minlength: 10,
                 number: true
@@ -39,6 +42,9 @@
             ConfirmPassword: {
                 required: "Confirm password is required",
                 equalTo: "Passwords should match"
+            },
+			 DOB : {
+                required : "Please enter date of birth"
             },
             Contact: {
                 minlength: "Mobile number should contain more than 10 characters",

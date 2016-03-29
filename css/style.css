@@ -6,15 +6,45 @@ body {
     font-family: 'Hind Siliguri', sans-serif;
     background-image: url("../images/background-img.png");
 }
-label {
 
+label {
     margin-bottom: 0px !important;
-    font-size:13px;
-    color:#FF0000;
-    font-weight: 700;
+    font-size: 12px;
+    color: #FF0000;
+    font-weight: normal;
 }
-select.error, textarea.error, input.error {
-    border:1px solid #FF0000;
+
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+}
+
+select.error,
+textarea.error,
+input.error {
+    border: 1px solid #FF0000;
+}
+
+.fa {
+    display: inline;
+}
+
+.glyphicon {
+    display: inline;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.testimonial {
+    width: 50%;
+    float: right;
 }
 
 .color-class {
@@ -27,13 +57,13 @@ select.error, textarea.error, input.error {
 
 .brand {
     position: absolute;
-    left:  45%;
+    left: 45%;
     margin-left: -50px !important;
     display: block;
 }
 
 .row-centered p {
-    font-size: 30px;   
+    font-size: 20px;
 }
 
 .navbar {
@@ -57,10 +87,13 @@ select.error, textarea.error, input.error {
     position: relative;
 }
 
-
+.cust-padding {
+            padding-top: 10px;
+}
 .login {
-    float: right;
-    width: 400px;
+    width:80%;
+    float:right;
+
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -76,8 +109,8 @@ select.error, textarea.error, input.error {
     margin-top: 0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    margin-bottom: -10px;
-    font-size: 28px;
+    margin-bottom: 0%;
+    font-size: 20px;
     background-color: #4B4B4F;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#4B4B4F), to(#515155));
     background-image: -webkit-linear-gradient(top, #4B4B4F, #515155);
@@ -86,37 +119,37 @@ select.error, textarea.error, input.error {
     background-image: -o-linear-gradient(top, #4B4B4F, #515155);
     background-image: linear-gradient(to bottom, #4B4B4F, #515155);
     filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#4B4B4F, endColorstr=#515155);
-    padding: 21px;
+    padding: 5%;
     font-weight: normal;
     text-align: center;
     color: #fff;
 }
 
-
 .login-container {
+	    border: 1px solid rgb(209, 206, 200);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     background: #ebebeb;
-    padding: 10px 20px;
+    padding: 3% 5%;
 }
 
-.login-container .form-group{
-    margin-bottom:10px;
-
+.login-container .form-group {
+    margin-bottom: 2%;
 }
-.login input[type="button"] , input[type="submit"]{
+
+.login button {
     width: 100%;
     border-width: 0px;
     border-style: solid;
-    padding: 12px;
-    font-size:20px;
-        background-color: #4B4B4F; 
+    padding: 4%;
+    background-color: #4B4B4F;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#4B4B4F), to(#515155));
- background-image: -webkit-linear-gradient(top, #4B4B4F, #515155);
- background-image: -moz-linear-gradient(top, #4B4B4F, #515155);
- background-image: -ms-linear-gradient(top, #4B4B4F, #515155);
- background-image: -o-linear-gradient(top, #4B4B4F, #515155);
- background-image: linear-gradient(to bottom, #4B4B4F, #515155);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#4B4B4F, endColorstr=#515155);
+    background-image: -webkit-linear-gradient(top, #4B4B4F, #515155);
+    background-image: -moz-linear-gradient(top, #4B4B4F, #515155);
+    background-image: -ms-linear-gradient(top, #4B4B4F, #515155);
+    background-image: -o-linear-gradient(top, #4B4B4F, #515155);
+    background-image: linear-gradient(to bottom, #4B4B4F, #515155);
+    filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#4B4B4F, endColorstr=#515155);
     color: #fff;
     border-radius: 5px !important;
     -moz-border-radius: 0;
@@ -135,7 +168,7 @@ select.error, textarea.error, input.error {
 
 .inner-addon .glyphicon {
     position: absolute;
-    padding: 10px;
+        padding: 8px;
     pointer-events: none;
 }
 
@@ -166,42 +199,30 @@ select.error, textarea.error, input.error {
 }
 
 .form-control {
-    font-size:16px;
-    border-radius:0;
+    font-size: 13px;
+    border-radius: 0;
 }
 
 #rightcolumn ul li:first-child {
-    width: 75%;
-    font-size:16px;
+    width: 100%;
+    font-size: 13px;
     list-style-type: none;
-    padding: 0px 0 25px;
+    padding: 0 0 5%;
     color: #999999;
     border-bottom: 1px solid #D1CEC8;
 }
 
-.testimonial {
-     width: 50%;
-     float: right;
-}
-
 #rightcolumn ul li {
-    width: 75%;
-    font-size:16px;
+    width: 100%;
+    font-size: 13px;
     list-style-type: none;
-    padding: 25px 0 30px;
+    padding: 5% 0 5%;
     color: #999999;
     border-bottom: 1px solid #D1CEC8;
 }
 
 #rightcolumn ul li span {
     margin-right: 15px;
-}
-
-#picturediv ul li {
-    width: 100% !important;
-    padding: 50px 0 30px !important;
-    list-style-type: none;
-    border-bottom: 1px solid #D1CEC8;
 }
 
 .bottomcolumn {
@@ -224,24 +245,25 @@ select.error, textarea.error, input.error {
 }
 
 #picturediv {
-    z-index: -1;   
-    width: 100%;
-    top: 58%;
-    margin-top: 6%;
+    z-index: -1;
+    margin-top: 7%;
+    margin-left: -110%;
+    margin-right: -15px;
     background: white;
-    padding-left: 6%;
-    padding-top: 43px;
+    padding-left: 20%;
+    padding-top: 4%;
 }
 
 #picturediv img {
     height: 50px;
-    width: 8%;
+    width: 7%;
     float: left;
     border: 1px solid #101010;
     border-radius: 50%;
 }
 
 .right {
+	font-size : 13px;
     display: block;
     margin-left: 9%;
     width: auto;
@@ -258,7 +280,11 @@ select.error, textarea.error, input.error {
 }
 
 .gallery-container {
-    margin-left: 6%;
+    margin-top: 2%;
+}
+
+.gallery-container img {
+    padding: 1%;
 }
 
 .gallery {
@@ -269,69 +295,155 @@ select.error, textarea.error, input.error {
     border-bottom: 1px solid #D1CEC8;
 }
 
-.gallery-container img {
-    float: left;
-    margin: 10px 1% 0px;
-    padding: 30px 1% 0px;    
+@media (max-width: 1300px) and (min-width: 996px) {
+    .login {
+    width:100%;
+    float:right;
+}
+#rightcolumn ul li:first-child {
+  
+    padding: 0 0 8%;
+    
 }
 
-@media all and (max-width : 991px) { 
-        .col-md-6 {
-            width: 100%;
-        }
- 
-        .brand {
+#rightcolumn ul li {
+
+    padding: 8% 0 8%;
+   
+}
+}
+
+
+/*Media queries */
+@media  (max-width: 995px) and (min-width: 481px) {
+    .col-md-3 {
+        width: 100%;
+    }
+    .col-md-6 {
+        width: 100%;
+    }
+    #picturediv {
+        margin-left: -15px;
+        padding-left: 1%;
+        padding-top: 4%;
+    }
+ `
+    .form-control {
+        height:40px;
+    }
+    .login-container .form-group {
+    margin-bottom: 3%;
+    }
+    .brand {
         position: absolute;
         left: 30%;
         margin-left: -50px !important;
         display: block;
-        }
-
-        .login {
-         float: none;
-         width:80%;
-         margin:0 auto;
-        }
-
-            .testimonial {
-         width: 100%;
+    }
+    .login {
         float: none;
-        }
-        .login input[type="button"] , input[type="submit"]{
-            font-size:18px;
-        }
-
-        #rightcolumn {
-            margin-top: 5%;
-        }
-    
-     #rightcolumn ul li:first-child {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .testimonial {
         width: 100%;
+        float: none;
+    }
+   
+    .login button {
+        padding: 3%;
+    }
+     .login-header {
+        font-size: 30px;
+            padding: 7%;
+    }
+    
+    .right {
+    margin-left: 8%;
+    }
+   
+    #rightcolumn {
+        margin-top: 5%;
+    }
+    #rightcolumn ul li:first-child {
+            width: 60%;
+    margin: 0 auto;
+        font-size:20px;
         list-style-type: none;
         padding: 0px 0 25px;
         color: #999999;
-        font-size: 20px;
         border-bottom: 1px solid #D1CEC8;
     }
     #rightcolumn ul li {
-        width: 100%;
+            width: 60%;
+    margin: 0 auto;
+        font-size:20px;
         list-style-type: none;
         padding: 25px 0 30px;
         color: #999999;
-           font-size: 20px;
         border-bottom: 1px solid #D1CEC8;
     }
-      .gallery-container img:first-child {
-        margin:0 auto;
+    .gallery-container img:first-child {
+        margin: 0 auto;
     }
     .gallery-container img {
-        display:block;
-        width:40%;
+        display: block;
+        width: 30%;
         margin: 0 auto;
-        text-align:center;
-        float:none;
+        text-align: center;
+        float: none;
+    }
   
-  }
 }
 
+@media  (max-width: 480px) {
+    .login {
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .navbar img{
+            width: 180px;
+    }
+    .login button {
+            padding: 3%;
+    }    
 
+    .gallery-container img:first-child {
+        margin: 0 auto;
+    }
+    .gallery-container img {
+        display: block;
+        width: 30%;
+        margin: 0 auto;
+        text-align: center;
+        float: none;
+    }
+    .right {
+    margin-left: 15%;
+}	
+	#rightcolumn {
+    margin-top: 5%;
+	}
+	   #rightcolumn ul li:first-child {
+            width: 86%;
+ 
+    }
+    #rightcolumn ul li {
+            width: 86%;
+
+    }
+    #picturediv {
+        
+        padding-left: 1%;
+        padding-top: 4%;
+    }
+    #picturediv img {
+        height: 50px;
+             width: 14%;
+        float: left;
+        border: 1px solid #101010;
+        border-radius: 50%;
+    }
+
+}
