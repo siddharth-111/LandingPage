@@ -7,11 +7,11 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Hind+Siliguri' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap-datepicker.min.css">
     <meta name="viewport" content="width=device-width" />
 </head>
 
 <body>
-
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="navbar-inner">
             <!--changes made here-->
@@ -22,11 +22,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-              
             </div>
-              <a class="navbar-brand" href="#" style="z-index: -2;">
-                    <img src="images/leadSquaredlogo.png" alt="">
-                </a>
+            <a class="navbar-brand" href="#" style="z-index: -2;">
+                <img src="images/leadSquaredlogo.png" alt="">
+            </a>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-right: 1%;z-index: 30;">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Home</a></li>
@@ -35,66 +34,69 @@
             </div>
         </div>
     </nav>
-  
-        <div class="row row-centered">
-            <p class="text-center">Create your free leadsquared account</p>
-        </div>
-        <div class="row ">
-            <p class="text-center" style="font-size: 13px;color: #999999;">Used and loved by thousands of users</p>
-        </div>
-        <div class="row " style="margin-top: 1%;">
-          
-            <div class="col-md-4 col-md-offset-2" style="z-index: 20">
-                <form action="" method="post" id="register-form" novalidate="novalidate">
-                    <div class="login">
-                        <h2 class="login-header">
+    <div class="row row-centered">
+        <p class="text-center">Create your free leadsquared account</p>
+    </div>
+    <div class="row ">
+        <p class="text-center" style="font-size: 16px;color: #999999;">Used and loved by thousands of users</p>
+    </div>
+    <div class="row " style="margin-top: 1%;">
+        <div class="col-md-4 col-md-offset-2" style="z-index: 20">
+            <form action="" method="post" id="register-form" novalidate="novalidate">
+                <div class="login">
+                    <h2 class="login-header">
                 Just 30 secs to get started</h2>
-                        <div class="login-container">
-                            <div class="form-group left-inner-addon">
-                                <div class="inner-addon left-addon">
-                                    <i class="glyphicon glyphicon-user glyph-color"></i>
-                                    <input type="text" class="form-control" placeholder="Enter your Name" id="Name" name="Name" />
-                                </div>
-                            </div>
-                            <div class="form-group left-inner-addon">
-                                <div class="inner-addon left-addon">
-                                    <i class="glyphicon glyphicon-calendar glyph-color"></i>
-                                    <input placeholder="Date of Birth" class="form-control" type="text" onfocus="(this.type='date')" id="DOB" name="DOB" onblur="(this.type='text')">
-                                </div>
-                            </div>
-                            <div class="form-group left-inner-addon">
-                                <div class="inner-addon left-addon">
-                                    <i class="glyphicon glyphicon-lock glyph-color"></i>
-                                    <input type="password" class="form-control" placeholder="Enter Password" id="Password" name="Password" />
-                                </div>
-                            </div>
-                            <div class="form-group left-inner-addon">
-                                <div class="inner-addon left-addon">
-                                    <i class="glyphicon glyphicon-lock glyph-color"></i>
-                                    <input type="password" class="form-control" placeholder="Re-enter Password" id="ConfirmPassword" name="ConfirmPassword" />
-                                </div>
-                            </div>
-                            <div class="form-group left-inner-addon">
-                                <div class="inner-addon left-addon">
-                                    <i class="glyphicon glyphicon-envelope glyph-color"></i>
-                                    <input type="email" class="form-control" placeholder="Enter Your email address" id="Email" name="Email" />
-                                </div>
-                            </div>
-                            <div class="form-group left-inner-addon">
-                                <div class="inner-addon left-addon">
-                                    <i class="glyphicon glyphicon-phone glyph-color"></i>
-                                    <input type="text" class="form-control" placeholder="Enter your mobile number" id="Contact" name="Contact" />
-                                </div>
-                            </div>
-                            <div class="form-group"     style="margin-top: 4%;">
-                                <button type="submit" id="formLogin">Create my leadsquared account </button> 
+                    <div class="login-container">
+                        <div class="form-group left-inner-addon">
+                            <div class="inner-addon left-addon">
+                                <i class="glyphicon glyphicon-user glyph-color"></i>
+                                <input type="text" class="form-control" placeholder="Enter your Name" id="Name" name="Name" />
+                                <span class=" validation-message errors "></span>
                             </div>
                         </div>
+                        <div class="form-group left-inner-addon">
+                            <div class="inner-addon left-addon">
+                                <i class="glyphicon glyphicon-calendar glyph-color"></i>
+                                <input placeholder="Date of Birth" type="text" class=" date-picker form-control " id="DOB" name="DOB">
+                                <span class=" validation-message errors "></span>
+                            </div>
+                        </div>
+                        <div class="form-group left-inner-addon">
+                            <div class="inner-addon left-addon">
+                                <i class="glyphicon glyphicon-lock glyph-color"></i>
+                                <input type="password" class="form-control" placeholder="Enter Password" id="Password" name="Password" />
+                                <span class=" validation-message errors "></span>
+                            </div>
+                        </div>
+                        <div class="form-group left-inner-addon">
+                            <div class="inner-addon left-addon">
+                                <i class="glyphicon glyphicon-lock glyph-color"></i>
+                                <input type="password" class="form-control" placeholder="Re-enter Password" id="ConfirmPassword" name="ConfirmPassword" />
+                                <span class=" validation-message errors "></span>
+                            </div>
+                        </div>
+                        <div class="form-group left-inner-addon">
+                            <div class="inner-addon left-addon">
+                                <i class="glyphicon glyphicon-envelope glyph-color"></i>
+                                <input type="email" class="form-control" placeholder="Enter Your email address" id="Email" name="Email" />
+                                <span class=" validation-message errors "></span>
+                            </div>
+                        </div>
+                        <div class="form-group left-inner-addon">
+                            <div class="inner-addon left-addon">
+                                <i class="glyphicon glyphicon-phone glyph-color"></i>
+                                <input type="text" class="form-control" placeholder="Enter your mobile number" id="Contact" name="Contact" />
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-top: 4%;">
+                            <button type="submit" id="formLogin">Create my leadsquared account </button>
+                        </div>
                     </div>
-                </form>
-            </div>
-            <div id="rightcolumn">
-            	 <div class="col-md-4" >
+                </div>
+            </form>
+        </div>
+        <div id="rightcolumn">
+            <div class="col-md-4">
                 <ul>
                     <li><span class="glyphicon"><i class="fa fa-book"></i></span>Organize your lead capture</li>
                     <li><span class="glyphicon"><i class="fa fa-leaf"></i></span>Engage and nurture your leads</li>
@@ -103,39 +105,40 @@
                 </ul>
             </div>
             <div class="col-md-2"></div>
-          
-                <div class="col-md-6">
-                    <div id="picturediv" class="clearfix">
-                        <div class="testimonial"> <img src='images/Deepak_lamba.jpg' />
-                            <span class="right"> <i> "LeadSquared was instrumental in helping us address all our major customer acquisition challenges by organizing lead capture,lead nurturing and marketing automation.We are happy to be active users of LeadSquared" </i>
-				</span>
-                            <span class="right"><b> Deepak Lamba,President </b><br>
-   				<b>TimesPro</b>, <span style=" color: #999999;">A Times of India Group Initiative</span>
+            <div class="col-md-6">
+                <div id="picturediv" class="clearfix">
+                    <div class="testimonial">                     
+                        <div class="clearfix float-my-children">
+                            <img class="img-circle" src='images/Deepak_lamba.jpg' />
+                            <span class="rightDiv"> <i> "LeadSquared was instrumental in helping us address all our major customer acquisition challenges by organizing lead capture, lead nurturing and marketing automation.We are happy to be active users of LeadSquared" </i>
+   						<hr>
+   						 <span><b style="color:black;"> Deepak Lamba,President </b><br>
+   				<b style="color:black;">TimesPro</b>, <span style=" color: #999999;">A Times of India Group Initiative</span>
+                            </span>
                             </span>
                         </div>
                     </div>
                 </div>
             </div>
-           
-           
         </div>
-        <div class="row row-centered">
-            <p class="text-center cust-padding"> <span class="customer">Some of our happy customers</span></p>
-        </div>
-        <div class="row gallery-container">      
+    </div>
+    <div class="row row-centered">
+        <p class="text-center cust-padding"> <span class="customer">Some of our happy customers</span></p>
+    </div>
+    <div class="row gallery-container">
         <p class="text-center">
-        	 <img src="images/Timespro.gif">
             <img src="images/FBL.gif">
+            <img src="images/Timespro.gif">
             <img src="images/centium.gif">
             <img src="images/ace.gif">
             <img src="images/NIIT.gif">
-           </p>          
-        </div>
-   
+        </p>
+    </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.0/foundation.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.9.0/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js"></script>
     <script type="text/javascript" src="js/landingPage.js"></script>
     <!-- jQuery Form Validation code -->
 </body>

@@ -14,6 +14,13 @@ label {
     font-weight: normal;
 }
 
+hr {
+    margin-top: 11px;
+    margin-bottom: 11px;
+    border: 0;
+    border-bottom: 1px solid #D1CEC8;
+}
+
 .navbar-brand {
     position: absolute;
     width: 100%;
@@ -21,6 +28,12 @@ label {
     top: 0;
     text-align: center;
     margin: auto;
+}
+
+.validation-message {
+    font-size: 12px;
+    color: #FF0000;
+    line-height: 18px;
 }
 
 select.error,
@@ -45,6 +58,7 @@ input.error {
 .testimonial {
     width: 50%;
     float: right;
+    overflow: hidden;
 }
 
 .color-class {
@@ -53,13 +67,6 @@ input.error {
 
 .glyph-color {
     color: #999999;
-}
-
-.brand {
-    position: absolute;
-    left: 45%;
-    margin-left: -50px !important;
-    display: block;
 }
 
 .row-centered p {
@@ -88,12 +95,12 @@ input.error {
 }
 
 .cust-padding {
-            padding-top: 10px;
+    padding-top: 10px;
 }
-.login {
-    width:80%;
-    float:right;
 
+.login {
+    width: 80%;
+    float: right;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -126,7 +133,7 @@ input.error {
 }
 
 .login-container {
-	    border: 1px solid rgb(209, 206, 200);
+    border: 1px solid rgb(209, 206, 200);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     background: #ebebeb;
@@ -168,7 +175,7 @@ input.error {
 
 .inner-addon .glyphicon {
     position: absolute;
-        padding: 8px;
+    padding: 8px;
     pointer-events: none;
 }
 
@@ -205,7 +212,7 @@ input.error {
 
 #rightcolumn ul li:first-child {
     width: 100%;
-    font-size: 13px;
+    font-size: 16px;
     list-style-type: none;
     padding: 0 0 5%;
     color: #999999;
@@ -214,7 +221,7 @@ input.error {
 
 #rightcolumn ul li {
     width: 100%;
-    font-size: 13px;
+    font-size: 16px;
     list-style-type: none;
     padding: 5% 0 5%;
     color: #999999;
@@ -225,23 +232,25 @@ input.error {
     margin-right: 15px;
 }
 
-.bottomcolumn {
-    /* float: none; */
-    overflow: 1;
-    /* overflow: initial; */
-    /* position: relative; */
-    /* clear: both; */
-    clear: right;
-    /* width: inherit; */
-    height: auto;
-    /* position: static; */
-    /* padding: 0px 10px 5px 10px; */
-    height: 200px;
-    background: rgba(0, 0, 0, 0.51);
+.rightDiv {
+    overflow: hidden;
+    display: block;
+    padding-bottom: 10px;
+    color: #999999;
 }
 
 .clearfix {
-    overflow: auto;
+    overflow: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
 }
 
 #picturediv {
@@ -256,27 +265,9 @@ input.error {
 
 #picturediv img {
     height: 50px;
-    width: 7%;
+    width: 50px;
     float: left;
     border: 1px solid #101010;
-    border-radius: 50%;
-}
-
-.right {
-	font-size : 13px;
-    display: block;
-    margin-left: 9%;
-    width: auto;
-    padding-bottom: 10px;
-    color: #999999;
-    border-bottom: 1px solid #D1CEC8;
-}
-
-.right:nth-child(3) {
-    padding: 10px 0 10px;
-    border-bottom: 1px solid #D1CEC8;
-    color: #101010;
-    border-bottom: none !important;
 }
 
 .gallery-container {
@@ -297,25 +288,23 @@ input.error {
 
 @media (max-width: 1300px) and (min-width: 996px) {
     .login {
-    width:100%;
-    float:right;
-}
-#rightcolumn ul li:first-child {
-  
-    padding: 0 0 8%;
-    
-}
-
-#rightcolumn ul li {
-
-    padding: 8% 0 8%;
-   
-}
+        width: 100%;
+        float: right;
+    }
+    #rightcolumn ul li:first-child {
+        font-size: 13px;
+        padding: 0 0 8%;
+    }
+    #rightcolumn ul li {
+        font-size: 13px;
+        padding: 8% 0 8%;
+    }
 }
 
 
 /*Media queries */
-@media  (max-width: 995px) and (min-width: 481px) {
+
+@media (max-width: 995px) and (min-width: 481px) {
     .col-md-3 {
         width: 100%;
     }
@@ -327,18 +316,11 @@ input.error {
         padding-left: 1%;
         padding-top: 4%;
     }
- `
     .form-control {
-        height:40px;
+        height: 40px;
     }
     .login-container .form-group {
-    margin-bottom: 3%;
-    }
-    .brand {
-        position: absolute;
-        left: 30%;
-        margin-left: -50px !important;
-        display: block;
+        margin-bottom: 3%;
     }
     .login {
         float: none;
@@ -349,35 +331,29 @@ input.error {
         width: 100%;
         float: none;
     }
-   
     .login button {
         padding: 3%;
     }
-     .login-header {
+    .login-header {
         font-size: 30px;
-            padding: 7%;
+        padding: 7%;
     }
-    
-    .right {
-    margin-left: 8%;
-    }
-   
     #rightcolumn {
         margin-top: 5%;
     }
     #rightcolumn ul li:first-child {
-            width: 60%;
-    margin: 0 auto;
-        font-size:20px;
+        width: 60%;
+        margin: 0 auto;
+        font-size: 20px;
         list-style-type: none;
         padding: 0px 0 25px;
         color: #999999;
         border-bottom: 1px solid #D1CEC8;
     }
     #rightcolumn ul li {
-            width: 60%;
-    margin: 0 auto;
-        font-size:20px;
+        width: 60%;
+        margin: 0 auto;
+        font-size: 20px;
         list-style-type: none;
         padding: 25px 0 30px;
         color: #999999;
@@ -393,22 +369,20 @@ input.error {
         text-align: center;
         float: none;
     }
-  
 }
 
-@media  (max-width: 480px) {
+@media (max-width: 480px) {
     .login {
         float: none;
         width: 90%;
         margin: 0 auto;
     }
-    .navbar img{
-            width: 180px;
+    .navbar img {
+        width: 180px;
     }
     .login button {
-            padding: 3%;
-    }    
-
+        padding: 3%;
+    }
     .gallery-container img:first-child {
         margin: 0 auto;
     }
@@ -419,31 +393,24 @@ input.error {
         text-align: center;
         float: none;
     }
-    .right {
-    margin-left: 15%;
-}	
-	#rightcolumn {
-    margin-top: 5%;
-	}
-	   #rightcolumn ul li:first-child {
-            width: 86%;
- 
+    #rightcolumn {
+        margin-top: 5%;
+    }
+    #rightcolumn ul li:first-child {
+        width: 86%;
     }
     #rightcolumn ul li {
-            width: 86%;
-
+        width: 86%;
     }
     #picturediv {
-        
         padding-left: 1%;
         padding-top: 4%;
     }
     #picturediv img {
         height: 50px;
-             width: 14%;
+        width: 14%;
         float: left;
         border: 1px solid #101010;
         border-radius: 50%;
     }
-
 }
